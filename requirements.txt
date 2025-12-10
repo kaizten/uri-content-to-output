@@ -1,0 +1,5 @@
+# No external dependencies required
+# The script uses only Python standard library modules:
+# - argparse (standard library)
+# - urllib (standard library)
+# - sys (standard library)
