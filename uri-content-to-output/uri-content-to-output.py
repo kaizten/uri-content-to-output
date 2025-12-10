@@ -8,13 +8,13 @@ import argparse
 import urllib.request
 import urllib.error
 
-
 def main():
     parser = argparse.ArgumentParser(
         description="Fetch and print the content of a given URI to standard output."
     )
     parser.add_argument(
-        "uri",
+        "--uri",
+        required=True,
         help="The URI to fetch content from (http, https, file, etc.)"
     )
     
@@ -35,7 +35,6 @@ def main():
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
